@@ -4,20 +4,21 @@
  * and open the template in the editor.
  */
 package paquete2;
-
-
+import paquete1.Mensaje;
+import paquete3.Informacion;
 /**
  *
  * @author reroes
  */
 public class Demo {
 
-    /**
-     * @param args the command line arguments
-     */
+    
+    
     public static void main(String[] args) {
         
-        // usar printf;
+        int n = Informacion.obtenerHabitantes();
+        String frase = Mensaje.obtenerMensaje();
+        System.out.printf("%s con %d \n",frase,n);
     }
     
 }
